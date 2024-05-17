@@ -1,0 +1,12 @@
+# cria pra mim um docker-compose.yml que rode minha aplicação em flask na porta 5000 - não estou usando banco de dados, só um sqlite na minha propria aplicação
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      FLASK_APP: app.py
+      FLASK_ENV: development
