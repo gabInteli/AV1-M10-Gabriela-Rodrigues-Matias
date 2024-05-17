@@ -8,10 +8,15 @@ ________________________________________
 O seu sistema deve fornecer, no mínimo, as seguintes rotas:
 
 [x] - /novo: cadastrar um novo pedido. Recebe um JSON e retorna um ID.
+
 [x] - /pedidos: retorna todos os pedidos cadastrados
+
 [x] - /pedidos/<id>: retorna o pedido do ID fornecido. Se esse pedido não existir, retornar que não foi possível locallizar ele, da forma mais apropriada para atender as questões do problema proposto.
+
 [x] - O recurso / pedidos/<id> ainda deve possibilitar editar o pedido e excluir ele, implementados em recursos distintos.
+
 [x] - Nenhuma interface gráfica deve ser implementada, apenas as rotas. Elas devem ser testadas utilizando collections do Insomnia. Essas coleções devem ser exportadas no repositório.
+
 [x] - A solução deve ser dockerizada.
 
 ___________________________________________________
